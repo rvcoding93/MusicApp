@@ -5,6 +5,7 @@ module.exports = [
     imgURL:"images/theCarter.jpg",
     artist:"lil wayne",
     cd: "The Carter III",
+    albumcover: ,
 
    songTitles:["song1","song2", "song3", "song4"]
  },

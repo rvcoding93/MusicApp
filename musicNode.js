@@ -16,16 +16,23 @@ app.get('/', (req, res) => {
     console.log(songlist)
 });
 
-app.get('/albums/0', (req,res) => {
-    res.end()
+app.get('/albums/:${albumNumber}', (req,res) => {
+    res.send(`
+    <h1>${Album}</h1>
+    <div>${name}</div>
+    <div>${imgURL}</div>
+    <div>${songTitles}</div>
+    <div>${artist}</div>
+    <div>${cd}</div>
+    `)
 });
 
 app.get('/albums/1', (req,res) => {
-    res.end()
+    res.send()
 });
 
 app.get('/cds', (req,res) => {
-    res.end()
+    res.send()
 });
 
 server.listen(port, hostname, () => {
